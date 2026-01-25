@@ -1,8 +1,10 @@
 import { navItem } from './NavItems'
 
-export default function NavList({}) {
+
+
+export default function NavList({ ...props }) {
 	return (
-		<ul className='hidden lg:flex lg:gap-14'>
+		<ul {...props}>
 			{navItem.map(item => {
 				return (
 					<li key={item.href}>
