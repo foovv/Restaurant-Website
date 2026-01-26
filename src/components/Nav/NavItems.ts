@@ -11,4 +11,8 @@ export const navItem = [
 		href: '#Lokalizacja',
 		text: 'Lokalizacja',
 	},
+	{
+		href: '#FAQ',
+		text: 'FAQ',
+	},
 ] as const
