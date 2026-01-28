@@ -10,8 +10,7 @@ export default function Menu() {
 				</div>
 				<div>
 					<div>
-						cale menu
-						<div>jeden blok</div>
+						<div></div>
 					</div>
 				</div>
 			</div>
