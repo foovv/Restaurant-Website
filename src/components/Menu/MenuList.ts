@@ -1,9 +1,9 @@
-import kotlet from '../../../public/kotlet.png'
-import golabek from '../../../public/golabek.png'
-import zraz from '../../../public/zraz.png'
-import zurek from '../../../public/zurek.png'
+import kotlet from '/kotlet.png'
+import golabek from '/golabek.png'
+import zraz from '/zraz.png'
+import zurek from '/zurek.png'
 
-interface MenuItem {
+export interface MenuItem {
 	id: number
 	category: 'Obiady' | 'Drinki' | 'Desery' | 'all'
 	name: string

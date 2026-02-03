@@ -1,8 +1,13 @@
-import arrow from '../../../public/chevron-down.svg'
+import arrow from '/chevron-down.svg'
 import MenuCategory from './MenuCategory'
 import { useState } from 'react'
 
-export default function MenuBar() {
+interface MenuBarProps {
+	setIsSelectedCategory: (category: string) => void
+}
+
+
+export default function MenuBar({ setIsSelectedCategory }:MenuBarProps) {
 	const [isVisible, setIsVisible] = useState(false)
 
 	return (
@@ -12,7 +17,7 @@ export default function MenuBar() {
 					<img src={arrow} alt='strzałka w dół rozwijająca menu' />
 				</a>
 			</nav>
-			{isVisible ? <MenuCategory /> : <></>}
+			{isVisible ? <MenuCategory setIsSelectedCategory={setIsSelectedCategory} /> : <></>}
 		</div>
 	)
 }

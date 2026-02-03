@@ -1,7 +1,7 @@
 import NavList from './NavList'
 import NavMobile from './NavMobile'
 import { useEffect, useState } from 'react'
-import logo from '../.../../../../public/etsy.png'
+import logo from '/etsy.png'
 
 export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
