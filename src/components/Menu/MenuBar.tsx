@@ -6,14 +6,16 @@ interface MenuBarProps {
 	setIsSelectedCategory: (category: string) => void
 }
 
-
-export default function MenuBar({ setIsSelectedCategory }:MenuBarProps) {
+export default function MenuBar({ setIsSelectedCategory }: MenuBarProps) {
 	const [isVisible, setIsVisible] = useState(false)
 
 	return (
 		<div className='h-full w-full z-10'>
 			<nav className='flex justify-end items-center bg-snowWhite text-black h-full w-full  rounded-2xl'>
-				<a className='cursor-pointer h-full w-[25%] flex items-center justify-end pr-4' onClick={() => setIsVisible(prev => !prev)}>
+				<div className='w-full h-full hidden lg:flex'>
+					<MenuCategory setIsSelectedCategory={setIsSelectedCategory} />
+				</div>
+				<a className='cursor-pointer h-full w-[25%] flex items-center justify-end pr-4 lg:hidden' onClick={() => setIsVisible(prev => !prev)}>
 					<img src={arrow} alt='strzałka w dół rozwijająca menu' />
 				</a>
 			</nav>
