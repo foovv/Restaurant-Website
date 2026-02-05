@@ -4,7 +4,7 @@ export const navItem = [
 		text: 'Menu',
 	},
 	{
-		href: '#O nas',
+		href: '#Onas',
 		text: 'O nas',
 	},
 	{

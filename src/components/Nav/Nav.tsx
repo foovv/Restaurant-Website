@@ -28,8 +28,8 @@ export default function Nav() {
 					<button onClick={() => setIsMenuOpen(prev => !prev)} className='flex justify-center items-center cursor-pointer w-10 h-full lg:hidden '>
 						<div className='flex relative justify-center items-center -top-1 h-0.5 w-[40%] bg-black after:absolute after:bg-black after:top-1 after:w-full after:h-full'></div>
 					</button>
-					<div className='hidden lg:flex justify-center items-center  w-full h-full'>
-						<NavList className='hidden lg:flex lg:gap-14' />
+					<div className='hidden lg:flex justify-center items-center w-full h-full'>
+						<NavList className='hidden w-full h-full  lg:flex lg:gap-14' />
 					</div>
 				</div>
 				<div className='hidden lg:flex lg: w-[25%] lg:justify-end'>
